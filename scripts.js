@@ -8,12 +8,13 @@ function getRandomColor() {
   return color;
 }
 
-// Получаем кнопку по ID и добавляем обработчик события
 document.addEventListener("DOMContentLoaded", () => {
   const button = document.getElementById("switch");
-  const h1 = document.getElementById("colorText");
+  const h1 = document.getElementById("colorText_h1");
+  const h3 = document.getElementById("colorText_h3");
 
   button.addEventListener("click", () => {
     h1.style.color = getRandomColor();
+    h3.style.color = getRandomColor();
   });
 });
